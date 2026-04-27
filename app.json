@@ -1,0 +1,44 @@
+{
+  "name": "TwilioSMSBot",
+  "description": "Best Twilio SMS Bot For All Type Features",
+  "repository": "https://github.com/YourUsername/SmartToolsBot",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token",
+      "required": true
+    },
+    "DEVELOPER_ID": {
+      "description": "Your Telegram User ID",
+      "required": true
+    },
+    "UPDATE_CHANNEL_URL": {
+      "description": "Updates Channel URL",
+      "required": true
+    },
+    "ADMIN_IDS": {
+      "description": "Comma-separated list of admin user IDs",
+      "required": true
+    },
+    "COMMAND_PREFIX": {
+      "description": "Command prefixes, separated by commas",
+      "required": false
+    },
+    "MONGO_URL": {
+      "description": "Your MongoDB connection URL",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
